@@ -9,7 +9,7 @@
       <div class="header-up">
         <h1>Техномарт</h1>
         <a class="header-logo" href="index.html">
-          <img src="https://via.placeholder.com/368x100" alt="">
+          <img src="img/logo-technomart.svg" width="109" height="19" alt="логотип «Техномарт»">
         </a>
         <form action="#" method="get">
           <label for="search"></label>
@@ -44,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section>
         <h2>Компания «Техномарт»</h2>
         <ul>
@@ -74,15 +74,33 @@
       <section>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис.</p>
-        <a href="">Карта</a>
-          <img src="https://via.placeholder.com/150x100" alt="">
-        <a href="">Заблудились? напишите нам!</a>
+        <a class="map" href="">
+          <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </a>
+        <a class="btn-letter" href="">Заблудились? Напишите нам!</a>
+      </section>
+      <section class="modal modal-write">
+        <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="write-name">
+            <label class="visually-hidden" for="write-your-name">Ваше имя:</label>
+            <input type="text" name="your-name" id="wirte-your-name" value="" placeholder="Представьтесь,пожалуйста">
+          </p>
+          <p class="write-e-mail">
+            <label class="visually-hidden" for="write-your-e-mail">Ваш e-mail:</label>
+            <input type="text" name="your-e-mail" id="wirte-your-e-mail" value="" placeholder="Для отправки ответа">
+          </p>
+          <p class="write-message">
+            <label class="visually-hidden" for="write-your-message">Текст письма:</label>
+            <input type="text" name="your-message" id="wirte-your-message" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer>
       <div class="footer-down">
-        <a class="header-logo" href="index.html">
-          <img src="https://via.placeholder.com/368x100" alt="">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo-technomart-footer.svg" width="138" height="23" alt="логотип «Техномарт»">
         </a>
         <div>
           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -102,7 +120,7 @@
           <li><a href="catalog.html">Спецпредложения</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-relations">
         <span>© 2010-2016 Компания «Техномарт»</span>
         <span>Все права защищены</span>
         <ul class="footer-socials">
