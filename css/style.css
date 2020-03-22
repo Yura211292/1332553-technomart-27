@@ -17,6 +17,17 @@ header {
 	background-color: #f3f7f9;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-up {
 	color: #ffffff;
 
@@ -32,6 +43,7 @@ a {
 }
 
 .btn {
+	font-family: "Cuprum", "Roboto", sans-serif;
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -41,6 +53,10 @@ a {
 
 	background-color: #ee3643;
 	border: none;
+}
+
+input::placeholder {
+	font-family: "Cuprum", "Roboto", sans-serif;
 }
 
 .btn:hover,
@@ -61,6 +77,28 @@ a {
 	background-color: #ca2c37;
 }
 
+.search-form {
+	border: none;
+	background-color: #293449;
+}
+
+.search-form:hover {
+	color: #000000;
+	background-color: #212a3a;
+}
+
+.search-form:focus {
+	background-color: #ffffff;
+}
+
+input.search-form::placeholder {
+	color: #ffffff;
+}
+
+input.search-form:focus {
+	background-color: : #ffffff;
+}
+
 .header-box:hover,
 .header-box:focus {
 	background-color: #212a3a;
@@ -75,8 +113,17 @@ a {
 	background-color: #63a63e;
 }
 
-.header-down {
-	background-image: url('C:/Users/User/Desktop/1332553-technomart-27/img/header-down-background.png');
+.header-basket {
+	background-color: #ee3643;
+}
+
+.header-basket:hover,
+.header-basket:focus {
+	background-color: #212a3a;
+}
+
+.basket-product {
+	display: none;
 }
 
 .header-down p {
@@ -90,6 +137,7 @@ a {
 	font-size: 21px;
 	line-height:21px;
 	color:#ee3643;
+	border: 3px solid #ffffff;
 
 }
 
@@ -98,9 +146,9 @@ address {
 	font-style: normal;
 	line-height:24px;
 	color:#32425c;
-
 }
 
+.user,
 .enter {
 	font-size: 21px;
 	line-height:21px;
@@ -109,18 +157,29 @@ address {
 	background-color: #ffffff;
 }
 
+.cabinet {
+	font-size: 16px;
+	line-height:18px;
+	color:#32425c;
+	text-decoration: underline;
+}
+
+.cabinet:hover,
+.cabinet:focus {
+	color: #ee3643;
+}
+
 .user-block a:hover,
 .user-block a:focus {
 	color: #ee3643;
 }
 
 .navigation {
-	background-image: url('C:/Users/User/Desktop/1332553-technomart-27/img/navigation-background.png');
 	background-color: #32425c;
 }
 
 .main-navigation a {
-	color:inherit;
+	color:#ffffff;
 }
 
 .site-navigation {
@@ -132,6 +191,119 @@ address {
 .user-navigation a:hover,
 .user-navigation a:focus {
 	background-color: #293449;
+}
+
+.container {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: 400;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.breadcrumbs {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	text-decoration: underline;
+}
+
+.page {
+	font-family: "Cuprum", "Roboto", sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #32425c;
+	background-color: #f2f6f8;
+}
+
+.span-filters {
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #f7f3ec;
+}
+
+.price {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.box-one,
+.box-two {
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #f7f3ec;
+	border: none;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.filters ul {
+	list-style: none;
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-list h3 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.catalog-item-price {
+	font-weight: 700;
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #ee3643;
+}
+
+.catalog-item-price:hover,
+.catalog-item-price:focus {
+	background-color: #ca2c37;
+}
+
+.catalog-item-through {
+	font-weight: 700;
+	color: #999999;
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+}
+
+.filter-button-button {
+	font-weight: 400;
+	font-family: "PT Sans", "Arial", sans-serif;
+	color: #000000;
+	border: 1px solid #e5e5e5;
+	background-color: #ffffff;
+	text-transform: uppercase;
 }
 
 .index-columns {
@@ -148,6 +320,7 @@ address {
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height:30px;
+	font-family: "Cuprum", "Roboto", sans-serif;
 }
 
 .advantages-text {
@@ -155,6 +328,7 @@ address {
 }
 
 .companies-text {
+	font-family: "Cuprum", "Roboto", sans-serif;
 	font-size: 18px;
 	line-height:20px;
 }
@@ -195,7 +369,7 @@ footer {
 
 .footer-contacts a,
 .footer-contacts address {
-	color: #ffffff;
+	color: #f3f7f9;
 }
 
 .footer-navigation,
@@ -204,7 +378,7 @@ footer {
 }
 
 .footer-navigation a{
-	color: #ffffff;
+	color: #f1f5f7;
 }
 
 .footer-navigation-list a{
@@ -236,4 +410,98 @@ footer {
 .footer-relations a:hover,
 .footer-relations a:focus {
 	text-decoration: underline;
+}
+
+.footer-socials-1 a,
+.footer-socials-2 a,
+.footer-socials-3 a {
+	color: #ffffff;
+}
+
+.footer-socials-1 a:hover,
+.footer-socials-1 a:focus,
+.footer-socials-2 a:hover,
+.footer-socials-2 a:focus,
+.footer-socials-3 a:hover,
+.footer-socials-3 a:focus {
+	text-decoration: none;
+}
+
+/*Сеточные стили*/
+
+html,
+body {
+	min-width: 1200px;
+}
+
+.main-header {
+	margin-bottom: 59px;
+}
+
+.header-up {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	margin-bottom: 46px;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-box-ordering {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+.header-up-wrapper {
+	background-color: #293449;
+}
+
+.header-down {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header-down-wrapper {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.header-down-wrapper p {
+	padding-left: 53px;
+	width: 196px;
+}
+
+.phone {
+	width: 270px;
+}
+
+.header-down-wrapper address {
+	width: 250px;
+}
+
+.index-columns {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	justify-content: space-between;
+	margin-bottom: 86px;
+}
+
+.company {
+	width: 548px;
+}
+
+.contacts {
+	width: 300px;
+}
+
+.footer-down {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
