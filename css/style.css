@@ -91,6 +91,10 @@ input::placeholder {
 	background-color: #ffffff;
 }
 
+.search-form {
+	outline-style: none;
+}
+
 input.search-form::placeholder {
 	color: #ffffff;
 }
@@ -462,25 +466,50 @@ body {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
-}
-
-.header-down-wrapper {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
 }
 
-.header-down-wrapper p {
+.header-down p {
 	padding-left: 53px;
 	width: 196px;
+}
+
+.phone-address {
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	flex-wrap: nowrap;
 }
 
 .phone {
 	width: 270px;
 }
 
-.header-down-wrapper address {
+.header-down address {
 	width: 250px;
+}
+
+.header-down-wrapper {
+	background-color: #f3f7f9;
+}
+
+.navigation {
+	margin: 0 auto;
+	width: 940px;
+
+	background-color: #32425c;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
 }
 
 .index-columns {
@@ -501,7 +530,88 @@ body {
 }
 
 .footer-down {
+	display: flex;
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
+}
+
+.footer-wrapper {
+	background-color: #32425c;
+}
+
+.footer-relations {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	align-items: baseline;
+	
+}
+
+.footer-span-block {
+	width: 245px;
+	margin: 0;
+	margin-right: 160px;
+}
+
+.footer-socials {
+	width: 140px;
+}
+
+.footer-developer {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin-left: auto;
+
+}
+
+.footer-logo-contacts {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-navigation-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+}
+
+.footer-navigation {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 547px;
+	margin-left: auto;
+	margin-top: 42px;
+
+	list-style: none;
+}
+
+.footer-navigation-list {
+	display: flex;
+	justify-content: space-between;
+	width: 524px;
+	padding: 0;
+	margin-left: auto;
+	padding-top: 17px;
+	margin-bottom: 80px;
+
+	list-style: none;
+}
+
+.footer-logo {
+	width: 220px;
+	height: 63px;
+}
+
+.footer-logo img {
+	padding-top: 20px;
+	padding-left: 41px;
+}
+
+.footer-contacts {
+	margin-top: 38px;
 }
